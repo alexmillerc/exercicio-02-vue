@@ -1,4 +1,4 @@
-# exercicio-03 - Alex Miller
+# exercicio-02 e 03 - Alex Miller
 
 ## Project setup
 ```
