@@ -6,6 +6,9 @@
       <input type="number" placeholder="Preço" v-model="price" required />
       <input type="text" placeholder="Categoria" v-model="category" required />
       <input type="submit" value="Cadastrar" />
+      <button>
+        <router-link to="/products">Listar Produtos</router-link>
+      </button>
     </form>
   </div>
 </template>
@@ -30,7 +33,7 @@ export default {
         price: this.price,
         category: this.category,
       };
-      this.onAddProduct(product);
+      this.$store.dispatch("addProduct", product);
       this.name = "";
       this.price = "";
       this.category = "";
@@ -74,5 +77,27 @@ textarea:focus,
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+}
+
+button{
+  background-color: #f0a500;
+  color: #52616f;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: larger;
+  margin: 10%;
+  line-height: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: large;
+  color: #52616f;
 }
 </style>

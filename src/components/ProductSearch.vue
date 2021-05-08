@@ -32,7 +32,8 @@ export default {
 <style scoped>
 input {
   padding: 10px;
-  margin-bottom: 2%;
+  width: 93%;
+  margin-bottom: auto;
   border: 1px solid #f0a500;
   border-radius: 5px;
   color: #52616f;
